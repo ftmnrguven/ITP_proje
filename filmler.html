@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Filmler – CineVault</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">🎬 CineVault</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Ana Sayfa</a></li>
+      <li><a href="filmler.html" class="active">Filmler</a></li>
+      <li><a href="hakkinda.html">Hakkında</a></li>
+      <li><a href="iletisim.html">İletişim</a></li>
+    </ul>
+    <a href="giris.html" class="btn-nav">Giriş Yap</a>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <h1>Film Kataloğu</h1>
+    <p>Tüm zamanlarin en iyi filmlerini keşfet</p>
+  </div>
+
+  <!-- FİLTRE – Flexbox row -->
+  <section class="filter-bar">
+    <span class="filter-label">Filtrele:</span>
+    <button class="filter-btn active" data-filter="Tümü">Tümü</button>
+    <button class="filter-btn" data-filter="Aksiyon">Aksiyon</button>
+    <button class="filter-btn" data-filter="Dram">Dram</button>
+    <button class="filter-btn" data-filter="Bilim Kurgu">Bilim Kurgu</button>
+    <button class="filter-btn" data-filter="Komedi">Komedi</button>
+    <button class="filter-btn" data-filter="Gerilim">Gerilim</button>
+  </section>
+
+  <!-- FİLM LİSTESİ – Flexbox wrap grid -->
+  <section class="catalog-section">
+    <div class="catalog-grid" id="catalog-grid">
+
+      <div class="catalog-card" data-genre="Bilim Kurgu">
+        <div class="cat-poster" style="background:linear-gradient(135deg,#1a1a2e,#16213e)">
+          <span class="film-genre">Bilim Kurgu</span>
+          <span class="film-rating">★ 8.8</span>
+        </div>
+        <div class="cat-body">
+          <h4>Interstellar</h4>
+          <p class="cat-meta">Christopher Nolan &nbsp;·&nbsp; 2014 &nbsp;·&nbsp; 169 dk</p>
+          <p class="cat-desc">Bir grup astronot, insanlığın geleceği için yeni bir gezegen aramaya çıkar.</p>
+        </div>
+      </div>
+
+      <div class="catalog-card" data-genre="Dram">
+        <div class="cat-poster" style="background:linear-gradient(135deg,#2d1b69,#11998e)">
+          <span class="film-genre">Dram</span>
+          <span class="film-rating">★ 9.3</span>
+        </div>
+        <div class="cat-body">
+          <h4>The Shawshank Redemption</h4>
+          <p class="cat-meta">Frank Darabont &nbsp;·&nbsp; 1994 &nbsp;·&nbsp; 142 dk</p>
+          <p class="cat-desc">Haksız yere mahkûm edilen bir adamın umudu ve özgürlük arayışı.</p>
+        </div>
+      </div>
+
+      <div class="catalog-card" data-genre="Gerilim">
+        <div class="cat-poster" style="background:linear-gradient(135deg,#c94b4b,#4b134f)">
+          <span class="film-genre">Gerilim</span>
+          <span class="film-rating">★ 8.5</span>
+        </div>
+        <div class="cat-body">
+          <h4>Inception</h4>
+          <p class="cat-meta">Christopher Nolan &nbsp;·&nbsp; 2010 &nbsp;·&nbsp; 148 dk</p>
+          <p class="cat-desc">Rüyaların içine girerek fikir çalmak üzerine kurulu zihin bükücu bir gerilim.</p>
+        </div>
+      </div>
+
+      <div class="catalog-card" data-genre="Aksiyon">
+        <div class="cat-poster" style="background:linear-gradient(135deg,#373b44,#4286f4)">
+          <span class="film-genre">Aksiyon</span>
+          <span class="film-rating">★ 8.1</span>
+        </div>
+        <div class="cat-body">
+          <h4>The Dark Knight</h4>
+          <p class="cat-meta">Christopher Nolan &nbsp;·&nbsp; 2008 &nbsp;·&nbsp; 152 dk</p>
+          <p class="cat-desc">Batman, Gotham şehrini kaosa sürükleyen Joker ile yüzleşir.</p>
+        </div>
+      </div>
+
+      <div class="catalog-card" data-genre="Animasyon">
+        <div class="cat-poster" style="background:linear-gradient(135deg,#f7971e,#ffd200)">
+          <span class="film-genre">Animasyon</span>
+          <span class="film-rating">★ 8.6</span>
+        </div>
+        <div class="cat-body">
+          <h4>Spirited Away</h4>
+          <p class="cat-meta">Hayao Miyazaki &nbsp;·&nbsp; 2001 &nbsp;·&nbsp; 125 dk</p>
+          <p class="cat-desc">Ruhlar dünyasına sürüklenen küçük Chihiro'nun büyülü yolculuğu.</p>
+        </div>
+      </div>
+
+      <div class="catalog-card" data-genre="Dram">
+        <div class="cat-poster" style="background:linear-gradient(135deg,#0f2027,#203a43,#2c5364)">
+          <span class="film-genre">Dram</span>
+          <span class="film-rating">★ 8.9</span>
+        </div>
+        <div class="cat-body">
+          <h4>The Godfather</h4>
+          <p class="cat-meta">Francis Ford Coppola &nbsp;·&nbsp; 1972 &nbsp;·&nbsp; 175 dk</p>
+          <p class="cat-desc">Corleone ailesinin iktidar mücadelesi ve ihaneti anlatan efsanevi yapım.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Sonuç bulunamadı mesajı -->
+    <div id="no-result" style="display:none; text-align:center; padding:60px 20px; color:#666;">
+      <div style="font-size:3rem; margin-bottom:12px;">🎬</div>
+      <p style="font-size:1.1rem;">Bu kategoride henüz film eklenmedi.</p>
+    </div>
+
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">🎬 CineVault</div>
+      <p>© 2026 CineVault – Tüm hakları saklıdır.</p>
+      <div class="footer-links">
+        <a href="index.html">Ana Sayfa</a>
+        <a href="filmler.html">Filmler</a>
+        <a href="iletisim.html">İletişim</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.catalog-card');
+    const noResult = document.getElementById('no-result');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Aktif butonu güncelle
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.getAttribute('data-filter');
+        let visibleCount = 0;
+
+        cards.forEach(card => {
+          const genre = card.getAttribute('data-genre');
+          if (filter === 'Tümü' || genre === filter) {
+            card.style.display = 'flex';
+            visibleCount++;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        // Hiç sonuç yoksa mesaj göster
+        noResult.style.display = visibleCount === 0 ? 'block' : 'none';
+      });
+    });
+  </script>
+
+</body>
+</html>
